@@ -1,4 +1,10 @@
-function FavoritesScreen (): JSX.Element {
+import {Offer} from '../../types/offers';
+
+type favoritesScreenProps = {
+  favorites: Offer
+}
+
+function FavoritesScreen ({favorites}:favoritesScreenProps): JSX.Element {
   return (
     <>
       <div style={{display: 'none'}}>
@@ -32,7 +38,6 @@ function FavoritesScreen (): JSX.Element {
             </div>
           </div>
         </header>
-
         <main className="page__main page__main--favorites">
           <div className="page__favorites-container container">
             <section className="favorites">

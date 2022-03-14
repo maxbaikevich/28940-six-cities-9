@@ -6,18 +6,21 @@ import LoginScreen from '../login-screen';
 import PropertyScreen from '../property-screen';
 import NotFoundScreen from '../not-found-screen';
 import PrivateRoute from '../private-route';
+import { Offers } from '../../types/offers';
 
 
 type AppScreenProps = {
-  placesOptions: number
+  placesOptions: number,
+  offers: Offers,
 }
-function App({placesOptions} :AppScreenProps ): JSX.Element {
+function App({offers, placesOptions} :AppScreenProps ): JSX.Element {
+  const favorites = offers.filter((el) => el.isFavorite === true);
   return (
     <BrowserRouter>
       <Routes>
         <Route
           path={AppRoute.Main}
-          element={<MainScreen placesOptions={placesOptions}/>}
+          element={<MainScreen placesOptions={placesOptions} offers={offers}/>}
         />
         <Route
           path={AppRoute.SignIn}
@@ -25,7 +28,7 @@ function App({placesOptions} :AppScreenProps ): JSX.Element {
         />
         <Route
           path={AppRoute.Favorites}
-          element={<PrivateRoute authorizationStatus={AuthorizationStatus.NoAuth}><FavoritesScreen/></PrivateRoute>}
+          element={<PrivateRoute authorizationStatus={AuthorizationStatus.Auth}><FavoritesScreen favorites={favorites}/></PrivateRoute>}
         />
         <Route
           path={AppRoute.Room}

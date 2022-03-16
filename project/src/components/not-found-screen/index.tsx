@@ -1,4 +1,4 @@
-function NotFoundScreen():JSX.Element {
+export default function NotFoundScreen():JSX.Element {
   return (
     <div className="container property__host-title">
       <h1>404</h1>
@@ -7,4 +7,3 @@ function NotFoundScreen():JSX.Element {
     </div>
   );
 }
-export default NotFoundScreen;

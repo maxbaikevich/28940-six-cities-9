@@ -1,5 +1,4 @@
 import { Offers } from '../../types/offers';
-
 import PlaceCard from '../place-card';
 
 type OffersListProps = {
@@ -7,7 +6,7 @@ type OffersListProps = {
     setActiveOffer: (id : number | null) => void;
 }
 
-function OffersList(props : OffersListProps): JSX.Element {
+export default function OffersList(props : OffersListProps): JSX.Element {
   const handleMouseOver = ( id: number ) => {
     props.setActiveOffer(id);
   };
@@ -24,5 +23,3 @@ function OffersList(props : OffersListProps): JSX.Element {
     </>
   );
 }
-
-export default OffersList;

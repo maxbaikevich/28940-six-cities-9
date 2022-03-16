@@ -7,7 +7,7 @@ type PrivateRouteProps = PropsWithChildren<{
   children: JSX.Element;
 }>;
 
-function PrivateRoute(props: PrivateRouteProps): JSX.Element {
+export default function PrivateRoute(props: PrivateRouteProps): JSX.Element {
   const {authorizationStatus, children} = props;
   return (
     authorizationStatus === AuthorizationStatus.Auth
@@ -15,4 +15,3 @@ function PrivateRoute(props: PrivateRouteProps): JSX.Element {
       : <Navigate to={AppRoute.SignIn} />
   );
 }
-export default PrivateRoute;

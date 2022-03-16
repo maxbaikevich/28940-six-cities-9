@@ -1,5 +1,5 @@
 import PropertyReviewForm from '../property-reviews-form';
-function propertyScreen(): JSX.Element {
+export default function PropertyScreen(): JSX.Element {
   return(
     <>
       <div style={{display: 'none'}}>
@@ -296,4 +296,3 @@ function propertyScreen(): JSX.Element {
     </>
   );
 }
-export default propertyScreen;

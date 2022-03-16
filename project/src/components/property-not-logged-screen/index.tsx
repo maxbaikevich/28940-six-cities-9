@@ -1,4 +1,4 @@
-function propertyNotLoggedScreen():JSX.Element {
+export default function PropertyNotLoggedScreen():JSX.Element {
   return (
     <body>
       <div style={{display: 'none'}}>
@@ -289,4 +289,3 @@ function propertyNotLoggedScreen():JSX.Element {
     </body>
   );
 }
-export default propertyNotLoggedScreen;

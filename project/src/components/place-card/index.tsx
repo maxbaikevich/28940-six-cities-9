@@ -4,7 +4,7 @@ type PlaceCardProps = {
   offer: Offer,
   mouseOverHandler: () => void,
 }
-function PlaceCard ({offer, mouseOverHandler}:PlaceCardProps): JSX.Element {
+export default function PlaceCard ({offer, mouseOverHandler}:PlaceCardProps): JSX.Element {
   return(
     <article className="cities__place-card place-card" onMouseOver={mouseOverHandler}>
       {offer.isPremium && (
@@ -44,4 +44,3 @@ function PlaceCard ({offer, mouseOverHandler}:PlaceCardProps): JSX.Element {
     </article>
   );
 }
-export default PlaceCard;

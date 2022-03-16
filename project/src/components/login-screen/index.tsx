@@ -1,4 +1,4 @@
-function loginScreen(): JSX.Element {
+export default function LoginScreen(): JSX.Element {
   return (
     <>
       <div style={{display: 'none'}}>
@@ -48,4 +48,3 @@ function loginScreen(): JSX.Element {
 
   );
 }
-export default loginScreen;

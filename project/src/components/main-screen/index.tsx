@@ -1,4 +1,3 @@
-// import PlaceCard from '../place-card';
 import OfferList from '../offers-list';
 import { Offers } from '../../types/offers';
 import { useState } from 'react';
@@ -8,7 +7,7 @@ type MainScreenProps = {
 }
 
 
-function MainScreen({placesOptions, offers}: MainScreenProps): JSX.Element {
+export default function MainScreen({placesOptions, offers}: MainScreenProps): JSX.Element {
   const [active, setActive] = useState(null as number | null);
   return(
     <>
@@ -117,4 +116,3 @@ function MainScreen({placesOptions, offers}: MainScreenProps): JSX.Element {
     </>
   );
 }
-export default MainScreen;

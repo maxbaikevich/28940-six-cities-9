@@ -1,4 +1,4 @@
-function mainEmptyScreen ():JSX.Element {
+export default function MainEmptyScreen ():JSX.Element {
   return(
     <>
       <div style={{display: 'none'}}>
@@ -89,4 +89,3 @@ function mainEmptyScreen ():JSX.Element {
 
   );
 }
-export default mainEmptyScreen;

@@ -1,4 +1,4 @@
-function favoriteEmptyScreen(): JSX.Element {
+export default function FavoriteEmptyScreen(): JSX.Element {
   return (
     <>
       <div style={{display: 'none'}}>
@@ -54,4 +54,4 @@ function favoriteEmptyScreen(): JSX.Element {
     </>
   );
 }
-export default favoriteEmptyScreen;
+

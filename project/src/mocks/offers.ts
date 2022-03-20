@@ -3,10 +3,10 @@ import { Offers } from '../types/offers';
 export const offers: Offers = [
   {
     'city': {
-      'name': 'Dusseldorf',
+      'name': 'Amsterdam',
       'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
+        'latitude': 52.37454,
+        'longitude': 4.897976,
         'zoom': 13,
       },
     },
@@ -53,18 +53,18 @@ export const offers: Offers = [
     },
     'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
     'location': {
-      'latitude': 51.236402000000005,
-      'longitude': 6.784314,
+      'latitude': 52.3909553943508,
+      'longitude': 4.85309666406198,
       'zoom': 16,
     },
     'id': 1,
   },
   {
     'city': {
-      'name': 'Brussels',
+      'name': 'Amsterdam',
       'location': {
-        'latitude': 50.846557,
-        'longitude': 4.351697,
+        'latitude': 52.37454,
+        'longitude': 4.897976,
         'zoom': 13,
       },
     },
@@ -105,18 +105,18 @@ export const offers: Offers = [
     },
     'description': 'Design interior in most sympathetic area! Complitely renovated, well-equipped, cosy studio in idyllic, over 100 years old wooden house. Calm street, fast connection to center and airport.',
     'location': {
-      'latitude': 50.867557,
-      'longitude': 4.371696999999999,
+      'latitude': 52.369553943508,
+      'longitude': 4.85309666406198,
       'zoom': 16,
     },
     'id': 2,
   },
   {
     'city': {
-      'name': 'Dusseldorf',
+      'name': 'Amsterdam',
       'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
+        'latitude': 52.37454,
+        'longitude': 4.897976,
         'zoom': 13,
       },
     },
@@ -161,18 +161,18 @@ export const offers: Offers = [
     },
     'description': 'A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families or friends.',
     'location': {
-      'latitude': 51.239402000000005,
-      'longitude': 6.756314000000001,
+      'latitude': 52.3909553943508,
+      'longitude': 4.929309666406198,
       'zoom': 16,
     },
     'id': 3,
   },
   {
     'city': {
-      'name': 'Brussels',
+      'name': 'Amsterdam',
       'location': {
-        'latitude': 50.846557,
-        'longitude': 4.351697,
+        'latitude': 52.37454,
+        'longitude': 4.897976,
         'zoom': 13,
       },
     },
@@ -218,8 +218,8 @@ export const offers: Offers = [
     },
     'description': 'Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed.',
     'location': {
-      'latitude': 50.842557,
-      'longitude': 4.363696999999999,
+      'latitude': 52.3809553943508,
+      'longitude': 4.939309666406198,
       'zoom': 16,
     },
     'id': 4,

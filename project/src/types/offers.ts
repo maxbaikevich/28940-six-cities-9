@@ -32,5 +32,5 @@ export type Offer = {
   id: number,
 };
 export type Offers = Offer[];
-export type Point = Pick<Offer, 'id' | 'location' >;
+export type Point = LocationOffer;
 export type Points = Point[];

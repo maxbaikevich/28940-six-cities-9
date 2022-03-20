@@ -1,14 +1,15 @@
 import OfferList from '../offers-list';
-import { Offers } from '../../types/offers';
+import { Offers} from '../../types/offers';
 import { useState } from 'react';
+import Map from '../map';
 type MainScreenProps = {
   placesOptions: number,
   offers: Offers,
 }
 
-
 export default function MainScreen({placesOptions, offers}: MainScreenProps): JSX.Element {
   const [active, setActive] = useState(null as number | null);
+  const points = offers.map((el)=> (el.location));
   return(
     <>
       <div style={{display: 'none'}}>
@@ -107,7 +108,12 @@ export default function MainScreen({placesOptions, offers}: MainScreenProps): JS
                 </div>
               </section>
               <div className="cities__right-section">
-                <section className="cities__map map"></section>
+                <section className="cities__map map">
+                  <Map
+                    city={offers[0].city}
+                    points={points}
+                  />
+                </section>
               </div>
             </div>
           </div>

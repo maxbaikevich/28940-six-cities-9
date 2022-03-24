@@ -5,9 +5,10 @@ import useMap from '../../hooks/useMap';
 import {CityOffer, Points, Point} from '../../types/offers';
 type MapProps = {
   city: CityOffer,
-  points: Points
+  points: Points,
+  height: number,
 }
-export default function Map({city, points}:MapProps): JSX.Element{
+export default function Map({city, points, height }:MapProps): JSX.Element{
   const URL_MARKER_DEFAULT = 'img/pin.svg';
 
   const mapRef = useRef(null);
@@ -37,7 +38,7 @@ export default function Map({city, points}:MapProps): JSX.Element{
 
   return (
     <div
-      style={{height: '743px'}}
+      style={{height: `${height}px`}}
       ref={mapRef}
     >
     </div>

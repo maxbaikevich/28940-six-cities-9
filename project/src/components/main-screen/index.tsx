@@ -112,6 +112,7 @@ export default function MainScreen({placesOptions, offers}: MainScreenProps): JS
                   <Map
                     city={offers[0].city}
                     points={points}
+                    height={743}
                   />
                 </section>
               </div>
